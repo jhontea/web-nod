@@ -28,6 +28,7 @@ express()
       res.send("Error " + err);
     }
   })
+  .get('/rsvp', (req, res) => res.send(showRsvp()))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 showTimes = () => {
@@ -37,4 +38,8 @@ showTimes = () => {
     result += i + ' '
   }
   return result;
+}
+
+showRsvp = () => {
+  return "This is rsvp"
 }
