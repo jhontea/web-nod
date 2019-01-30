@@ -22,7 +22,11 @@ app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 //catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  res.status(404).render('404', {title: "Sorry, page not found", session: req.sessionbo});
+  res.status(404).render('errors/error', {title: "400", message: "Ooops, page not found..."});
+});
+
+app.use(function (req, res, next) {
+    res.status(500).render('errors/error', {title: "500", message: "500..."});
 });
 
 exports = module.exports = app;
