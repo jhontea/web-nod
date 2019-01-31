@@ -2,7 +2,7 @@ pool = require('./db')
 
 module.exports = function (app) {
 
-    app.get('/', (req, res) => res.render('pages/index'))
+    app.get('/', (req, res) => res.render('pages/home'))
     app.get('/db', async (req, res) => {
         try {
             const client = await pool.connect()
