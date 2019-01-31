@@ -37,6 +37,10 @@
   - COMMENTS SECTION
   - DEMO LIST SECTION
   - FOOTER LIST SECTION */
+#map {
+  height: 500px;
+  width: 100%;
+}
 /* ================================== */
 /* BODY */
 /* ================================== */
