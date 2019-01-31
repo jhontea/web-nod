@@ -16,6 +16,8 @@
 }
 
 #clockdiv div > h1{
+    font-family: "Montserrat", sans-serif;
+    color: #beadc9;
     padding: 15px 15px 0px 15px;
     margin: 0px;
     border-radius: 3px;
@@ -26,4 +28,6 @@
 .smalltext{
     padding-top: 5px;
     font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #79578e;
 }
