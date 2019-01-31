@@ -2301,7 +2301,7 @@ a {
   padding: 170px 0;
   position: relative;
   overflow: hidden;
-  background-image: url(../img/banner-img.jpg);
+  /* background-image: url(../img/banner-img.jpg); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2373,7 +2373,7 @@ a {
 /* ================================== */
 #banner-page {
   height: 346px;
-  background-image: url(../img/banner-img.jpg);
+  background-image: url(/img/banner-img.jpg);
   background-position: center -100px;
   background-repeat: no-repeat;
   background-size: cover;

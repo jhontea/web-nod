@@ -4,6 +4,7 @@ module.exports = function (app) {
 
     app.get('/', (req, res) => res.render('pages/home'))
     app.get('/cl', (req, res) => res.render('pages/wed'))
+    app.get('/_main', (req, res) => res.render('main/main'))
     app.get('/db', async (req, res) => {
         try {
             const client = await pool.connect()

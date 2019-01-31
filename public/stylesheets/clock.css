@@ -8,6 +8,19 @@
     vertical-align: middle;
 }
 
+@media (max-width: 540px) {
+    #clockdiv{
+        font-family: 'Lato', sans-serif;
+        color: #888;
+        font-weight: 100;
+        text-align: center;
+        font-size: 30px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 400px;
+    }
+}
+
 #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
@@ -17,7 +30,7 @@
 
 #clockdiv div > h1{
     font-family: "Montserrat", sans-serif;
-    color: #beadc9;
+    color: #79578e;
     padding: 15px 15px 0px 15px;
     margin: 0px;
     border-radius: 3px;
