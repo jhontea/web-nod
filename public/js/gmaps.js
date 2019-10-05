@@ -32,11 +32,11 @@ function addMarker(markers){
 
 // Add the markers to the Map
 addMarker({
-    coordinate:{lat: -6.7638293, lng: 108.1824759},
+    coordinate:{lat: -6.8341052, lng: 108.2085991},
     infowindow:'<div id="content">'+
     '<h4 class="font-weight-light"><span class="custom-color">Our</span> Location</h4>'+
     '<div class="map-info-content">'+
-    '<p>Balai Diklat Kehutanan, Majalengka, Jawa Barat</p>'+
+    '<p>Islamic Centre Majalengka, Majalengka, Jawa Barat</p>'+
     '</div>'+
     '</div>',
     icon: "/img/map_marker.png",
