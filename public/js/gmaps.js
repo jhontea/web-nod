@@ -1,5 +1,5 @@
 // Add the map center coordinate
-var center = {lat: -6.7638293, lng: 108.1824759};
+var center = {lat: -6.8341052, lng: 108.2085991};
 
 var map = new google.maps.Map(document.getElementById('map'), 
     {
