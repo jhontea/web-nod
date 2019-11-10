@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "node test.js",
-    "local": "PORT=5001 DATABASE_URL=postgres://pwxvnbvnovposs:517568a3e06fa27b156849d72f4d15fb22f822083944939af44c25efe24c58c9@ec2-107-22-162-8.compute-1.amazonaws.com:5432/debu2nt1ips5o0 nodemon ./index.js"
+    "local": "PORT=5001 DATABASE_URL=postgres://ghovipfvrkcuie:c0b06980ccb93cb3162a4321f9694541376bd2e467505d1db65e88b03e86fc0a@ec2-54-221-253-228.compute-1.amazonaws.com:5432/d40h60t8sarh2l nodemon ./index.js"
   },
   "dependencies": {
     "cool-ascii-faces": "^1.3.4",

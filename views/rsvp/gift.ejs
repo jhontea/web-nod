@@ -1,0 +1,23 @@
+    <%if (rows.length > 0) { %>
+    <section id="gift-section">
+        <div class="container">
+            <div class="row">
+                <div class="gift-card col-md-7 col-lg-8 mx-auto">
+                    <div class="gift-card-head">
+                        <br>
+                        <div class="section-header"><img src="/img/flower-bw.png" alt="flower logo"/>
+                            <!-- sub heading section-->
+                            <h6 class="text-capitalize">dear</h6>
+                            <!-- heading section-->
+                            <h2 class="text-capitalize"><%= rows[0].name %> </h2>
+                        </div>
+                    </div>
+                    <div class="gift-card-body">
+                          <!-- gift or brand description-->
+                          <p>Our wedding day would be missing something if our amazing friends would not make it to the ceremony. So, we are sincerely asking you to come and be with us on the most anticipated day of our life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <% } %>

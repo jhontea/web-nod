@@ -17,9 +17,20 @@ module.exports = function (app) {
             res.send("Error " + err);
         }
     })
-    app.get('/rsvp', (req, res) => res.send(showRsvp()));
 
-    showRsvp = () => {
-        return "This is rsvp"
-    }
+    app.get('/rsvp/:key', async (req, res) => {
+        try {
+            const { key } = req.params
+            const client = await pool.connect()
+            
+            const { rows } = await client.query('SELECT * FROM rsvp WHERE key = $1', [key])
+
+            res.render('rsvp/rsvp', {rows} );
+
+            client.release();
+        } catch (err) {
+            console.error(err);
+            res.send("Error " + err);
+        }
+    })
 }
