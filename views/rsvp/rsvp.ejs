@@ -16,6 +16,19 @@
         <link href="/stylesheets/vendor/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/stylesheets/clarisa.css" />
         <link rel="stylesheet" type="text/css" href="/stylesheets/clock.css" />
+
+        <style>
+            img.qrcode {
+                max-width: 50%;
+                max-height: 50%;  
+                /* position: absolute; */
+                margin:auto;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+            }
+        </style>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
         <!--if lt IE 9-->
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,6 +42,9 @@
 
             <!-- EVENTS SECTION-->
             <% include ./event.ejs %>
+
+            <!-- qrmap SECTION-->
+            <% include ./qrmap.ejs %>
         </main>
     </body>
 
