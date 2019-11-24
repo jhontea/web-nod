@@ -2194,7 +2194,9 @@ a {
   #gallery-section .gallery-section-item:hover > .gallery-section-detail {
     transform: translate(-50%, -50%) scale(1); }
   #gallery-section .gallery-section-item:hover > img {
-    filter: blur(2px); }
+    /* filter: blur(2px); } */
+    opacity: 0.8;
+  }
   #gallery-section .gallery-section-item::after {
     content: "";
     width: calc(100% - 60px);

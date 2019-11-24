@@ -60,7 +60,11 @@ module.exports = function (app) {
             
             const { rows } = await client.query('SELECT * FROM rsvp WHERE key = $1', [key])
 
-            res.render('rsvp/rsvp', {rows} );
+            if (rows.length == 0) {
+                res.redirect("/_main")
+            } else {
+                res.render('rsvp/rsvp', {rows} );
+            }
 
             client.release();
         } catch (err) {
