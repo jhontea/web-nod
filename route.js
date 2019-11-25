@@ -2,9 +2,9 @@ pool = require('./db')
 
 module.exports = function (app) {
 
-    app.get('/', (req, res) => res.render('pages/home'))
+    app.get('/_main', (req, res) => res.render('pages/home'))
     app.get('/cl', (req, res) => res.render('pages/wed'))
-    app.get('/_main', (req, res) => res.render('main/main'))
+    app.get('/', (req, res) => res.render('main/main'))
 
     app.get('/send', async (req, res) => {
         try {
@@ -61,7 +61,7 @@ module.exports = function (app) {
             const { rows } = await client.query('SELECT * FROM rsvp WHERE key = $1', [key])
 
             if (rows.length == 0) {
-                res.redirect("/_main")
+                res.redirect("/")
             } else {
                 res.render('rsvp/rsvp', {rows} );
             }
