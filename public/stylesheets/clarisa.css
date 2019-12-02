@@ -2115,12 +2115,12 @@ a {
       border: 2px dashed #e2dbe7;
       background: transparent;
       transition: all 200ms ease-out; }
-    #gift-section .gift-card:hover {
-      background: #5c3575; }
+    /* #gift-section .gift-card:hover {
+      background: #5c3575; } */
     #gift-section .gift-card:hover::after {
       border-color: #79578e; }
-    #gift-section .gift-card:hover .gift-card-body > p {
-      color: #e2dbe7; }
+    /* #gift-section .gift-card:hover .gift-card-body > p {
+      color: #e2dbe7; } */
   #gift-section .gift-card-head {
     margin-bottom: 25px; }
   #gift-section .gift-card-body p {
@@ -2169,16 +2169,16 @@ a {
       transition: all 200ms ease-out; }
     #testimony-section .testimony-section-message p {
       transition: all 200ms ease-out; }
-    #testimony-section .testimony-section-message:hover {
-      background: #5c3575; }
+    /* #testimony-section .testimony-section-message:hover {
+      background: #5c3575; } */
     #testimony-section .testimony-section-message:hover::after {
       border-color: #79578e; }
-    #testimony-section .testimony-section-message:hover > p {
-      color: #e2dbe7; }
-    #testimony-section .testimony-section-message:hover .section-header > h6 {
-      color: #beadc9; }
-    #testimony-section .testimony-section-message:hover .section-header > h2 {
-      color: #fac0b7; }
+    /* #testimony-section .testimony-section-message:hover > p {
+      color: #e2dbe7; } */
+    /* #testimony-section .testimony-section-message:hover .section-header > h6 {
+      color: #beadc9; } */
+    /* #testimony-section .testimony-section-message:hover .section-header > h2 {
+      color: #fac0b7; } */
 
 /* GALLERY-SECTION */
 /* ================================== */
