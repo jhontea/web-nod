@@ -72,4 +72,24 @@ module.exports = function (app) {
             res.send("Error " + err);
         }
     })
+
+    app.get('/invitation/:key', async (req, res) => {
+        try {
+            const { key } = req.params
+            const client = await pool.connect()
+            
+            const { rows } = await client.query('SELECT * FROM rsvp WHERE key = $1', [key])
+
+            if (rows.length == 0) {
+                res.redirect("/")
+            } else {
+                res.render('rsvp/rsvp', {rows} );
+            }
+
+            client.release();
+        } catch (err) {
+            console.error(err);
+            res.send("Error " + err);
+        }
+    })
 }
